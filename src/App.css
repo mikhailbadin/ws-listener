@@ -1,38 +1,40 @@
-.App {
+@import '~antd/dist/antd.css';
+
+
+.code-box-demo {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout-header,
+.ant-layout-footer {
+  color: #000;
+  background: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+[data-theme="dark"] .ant-layout-header {
+  background: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+[data-theme="dark"] .ant-layout-footer {
+  background: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-layout-footer {
+  line-height: 1.5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-layout-sider {
+  color: #000;
+  line-height: 40px;
+  background: #fff;
+}
+[data-theme="dark"] .ant-layout-sider {
+  background: #fff;
+}
+.ant-layout-content {
+  min-height: 40px;
+  color: #000;
+  line-height: 40px;
+  background: #fff;
+}
+[data-theme="dark"] .ant-layout-content {
+  background: #fff;
+}
+> .code-box-demo > .ant-layout + .ant-layout {
+  margin-top: 48px;
 }
